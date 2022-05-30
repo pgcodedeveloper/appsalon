@@ -36,7 +36,7 @@ class Email{
 
         $contenido = "<html>";
         $contenido .= "<p><strong>Hola " . $this->nombre . "</strong> Has creado tu cuenta en App Salon, solo debes confirmarla presionando el siguiente enlace</p>";
-        $contenido .= "<p>Presiona aquí: <a href='http://localhost:3000/confirmar-cuenta?token=". $this->token . "'>Confirmar Cuenta</a></p>";
+        $contenido .= "<p>Presiona aquí: <a href='https://sheltered-atoll-11309.herokuapp.com/confirmar-cuenta?token=". $this->token . "'>Confirmar Cuenta</a></p>";
         $contenido .= "<p>Si tu no solicitaste este cuenta, pudes ignorar el mensaje</p>";
         $contenido .= "</html>";
 
@@ -65,7 +65,7 @@ class Email{
 
         $contenido = "<html>";
         $contenido .= "<p><strong>Hola " . $this->nombre . "</strong> Has solicitado reestablecer tu password, sigue el siguiente enlace</p>";
-        $contenido .= "<p>Presiona aquí: <a href='http://localhost:3000/recuperar?token=". $this->token . "'>Reestablecer Password</a></p>";
+        $contenido .= "<p>Presiona aquí: <a href='https://sheltered-atoll-11309.herokuapp.com/recuperar?token=". $this->token . "'>Reestablecer Password</a></p>";
         $contenido .= "<p>Si tu no solicitaste este cambio, pudes ignorar el mensaje</p>";
         $contenido .= "</html>";
 
